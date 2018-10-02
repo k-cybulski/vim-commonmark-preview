@@ -25,7 +25,11 @@ On Arch simply:
 ```
 sudo pacman -S cmark surf xdotool
 ```
-and then install the plugin itself with your favourite vim plugin editor.
+and then install the plugin itself with your favourite vim plugin installer, e.g.
+Vundle:
+```
+Plugin 'k-cybulski/vim-commonmark-preview' " Markdown preview
+```
 
 ### Usage
 To toggle the preview type `<leader>md`, which by default is `\md`
