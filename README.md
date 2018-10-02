@@ -7,8 +7,8 @@ This is a minimalistic plugin to compile and display
 It is _very_ minimalistic, by which I mean it has hardly any features and more
 resembles a malformed shell script glued together in vimscript than an actual plugin.
 Nonetheless, this is what works for me - I found other markdown plugins to miss my
-use case or to depend on Chrome or other fancy software that I wouldn't want to run
-next to vim. 
+use case or to depend on Node or Chrome or other fancy software that I wouldn't want
+to run next to vim. This plugin depends on _nonfancy_ software and thus fits.
 
 In fact, this is so rough that if you know anything about vimscript you could
 probably improve it many times over. Speaking of which, pull requests are more than
