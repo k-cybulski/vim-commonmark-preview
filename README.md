@@ -1,6 +1,6 @@
 # vim-commonmark-preview
 This is a minimalistic plugin to compile and display
-[CommonMark](https://github.com/commonmark/cmark) flavoured markdown in a
+[CommonMark](https://github.com/commonmark/cmark) flavoured markdown live in a
 [surf](https://surf.suckless.org/) window next to vim, vimtex style. 
 
 ## Disclaimer
@@ -29,6 +29,9 @@ and then install the plugin itself with your favourite vim plugin editor.
 
 ### Usage
 To toggle the preview type `<leader>md`, which by default is `\md`
+
+Now whenever you save your markdown file the `surf` window will refresh and you will
+see the lovely results of your work.
 
 ## Contributions
 Oh god please, if you know anything about vimscript send help. Pull requests more
