@@ -10,8 +10,8 @@ Nonetheless, this is what works for me - I found other markdown plugins to miss 
 use case or to depend on Chrome or other fancy software that I wouldn't want to run
 next to vim. 
 
-In fact, this is so rought that probably if you know anything about vimscript you
-could improve it many times over. Speaking of which, pull requests are more than
+In fact, this is so rough that if you know anything about vimscript you could
+probably improve it many times over. Speaking of which, pull requests are more than
 welcome.
 
 ## Setup
@@ -38,5 +38,4 @@ Now whenever you save your markdown file the `surf` window will refresh and you 
 see the lovely results of your work.
 
 ## Contributions
-Oh god please, if you know anything about vimscript send help. Pull requests more
-than welcome.
+Oh god please, if you know anything about vimscript send help _i.e. a pull request_.
