@@ -15,10 +15,11 @@ endfun
 
 fun CommonmarkPreview()
     if g:CommonmarkPreview == 1
-        let l:cssStyle = "<style type=\"text/css\">body{margin:40px auto;max-width:640px;line-height:1.3;font-size:16px;color:\\#444;padding:0 10px}h1{line-height:1.4}</style>"
+        let l:cssStyle = "<head><style type=\"text/css\">body{margin:40px auto;max-width:640px;line-height:1.3;font-size:16px;color:\\#444;padding:0 10px}h1{line-height:1.4}</style></head>"
         let l:htmlFileName = "." . bufname("%") . ".tmp.html"
-        silent execute "!echo \"" . l:cssStyle . "\" > " . l:htmlFileName
+        silent execute "!echo \"" . l:cssStyle . " <body>\" > " . l:htmlFileName
         silent execute "!cmark " . bufname("%") . " >> " . l:htmlFileName
+        silent execute "!echo \"</body>\" >> " . l:htmlFileName
         let l:CurrentEditorWindow=substitute(system("xdotool getactivewindow | xargs"), '\n\+$', '', '')
         silent !ps cax | grep surf
         if v:shell_error != 0
